@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/comment', function(){
+	return '<a href="feedback">Click Me</a>';
+});
+
+Route::get('/feedback', function(){
+	return 'Thank You';
+});

@@ -15,5 +15,10 @@ class ExampleTest extends TestCase
     {
         $this->visit('/')
              ->see('Laravel 5');
+
+        $this->visit('/comment')
+            ->click('Click Me')
+            ->see('Thank You')
+            ->seePageIs('feedback');
     }
 }
